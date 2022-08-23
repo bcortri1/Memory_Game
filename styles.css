@@ -1,0 +1,35 @@
+.yellow { 
+	background: #ffd600; 
+}
+	
+.orange { 
+	background: #ff7a00; 
+}
+
+.red { 
+	background: #ff0069; 
+}
+
+.magenta { 
+	background: #d300c5; 
+}
+
+.purple { 
+	background: #7638fa; 
+}
+
+div[flipped="false"] {
+    background: white;
+  }
+
+#game div {
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    transition: ease-out;
+    transition-duration: 1s;
+}
+
