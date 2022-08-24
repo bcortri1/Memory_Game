@@ -1,35 +1,68 @@
-.yellow { 
-	background: #ffd600; 
+.pikachu { 
+  background-position: center;
+	background-size: cover;
+  background-image: url("pikachu.jpg");
 }
 	
-.orange { 
-	background: #ff7a00; 
+.snorlax { 
+  background-position: center;
+  background-size: cover;
+	background-image: url("snorlax.jpg");
 }
 
-.red { 
-	background: #ff0069; 
+.lapras { 
+  background-position: center;
+  background-size: cover;
+	background-image: url("lapras.jpg");
 }
 
-.magenta { 
-	background: #d300c5; 
+.charizard {
+  background-position: center;
+  background-size: cover; 
+	background-image: url("charizard.jpg");
 }
 
-.purple { 
-	background: #7638fa; 
+.bulbasaur {
+  background-position: center;
+  background-size: cover; 
+	background-image: url("bulbasaur.jpg");
 }
 
-div[flipped="false"] {
-    background: white;
-  }
+.squirtle {
+  background-position: center;
+  background-size: cover;
+  background-image: url("squirtle.jpg");
+  
+}
+
+div[flipped="false"] {  
+  background-position: center;
+  background-size: cover;
+  background-image: url("pokemonback.jpg");
+  transform: rotateY(180deg);
+  transition: transform .5s ease-in-out;
+  
+}
 
 #game div {
-    border: 2px solid black;
-    border-radius: 25px;
-    width: 150px;
-    height: 200px;
-    margin: 20px;
+    box-shadow: 0 19px 38px rgba(0,0,0,.5);
+    border: 2px solid none;
+    border-radius: 15px;
+    width: 230px;
+    height: 320px;
+    margin: 40px;
     display: inline-block;
-    transition: ease-out;
-    transition-duration: 1s;
+    transition: transform .5s ease-in-out;
 }
 
+html {
+  background-position: center;
+  background-size: cover;
+  background-image: url("whosthat.png");
+}
+
+h1 {
+  font-family: Silkscreen;
+  text-align: center;
+  font-size: 40px;
+}

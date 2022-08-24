@@ -3,18 +3,21 @@ const gameBttn = document.getElementById("bttn");
 
 let temp;
 let count= 0;
-let score=0;
+let score = 0;
+let flipped = 0;
 const colors = [
-    'yellow',
-    'orange',
-    'red',
-    'magenta',
-    'purple',
-    'yellow',
-    'orange',
-    'red',
-    'magenta',
-    'purple'
+    'pikachu',
+    'snorlax',
+    'lapras',
+    'charizard',
+    'bulbasaur',
+    'squirtle',
+    'pikachu',
+    'snorlax',
+    'lapras',
+    'charizard',
+    'bulbasaur',
+    'squirtle',
 ];
 
 function shuffle(array) {
@@ -40,7 +43,9 @@ function shuffle(array) {
 
 
 function createDivsForColors(colorArray) {
+    flipped=colorArray.length;
     for (let color of colorArray) {
+        
         // create a new div
         const newDiv = document.createElement("DIV");
   
@@ -68,9 +73,10 @@ function handleCardClick(event) {
     //Prevents user from attempting match more than two cards at a time
     count++;
     if(count>2) {
+        //Increased timeout
         setTimeout(function(){
             count=0;
-        },1000);
+        },3000);
         console.log("Clicking too fast!");
         return;
     }
@@ -94,7 +100,12 @@ function handleCardClick(event) {
         //Gives a second delay after correct match
         else{
             score= score + 1;
+            flipped=flipped-2;
             setTimeout(function(){count=0;},1000);
+            if(flipped==0){
+                alert("YOU WON!");
+                location.reload();
+            }
         }
             
 
