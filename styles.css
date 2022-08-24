@@ -58,7 +58,7 @@ div[flipped="false"] {
 html {
   background-position: center;
   background-size: cover;
-  background-image: url("whosthat.png");
+  background-image: url("background.png");
 }
 
 h1 {
